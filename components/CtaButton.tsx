@@ -3,7 +3,7 @@ type Props = {
   label: string;
   /** Identificador da posição do CTA na página, enviado ao dataLayer e ao Pixel. */
   id: string;
-  /** Nome do plano ("Basico" | "Completo"): dispara o evento CtaPlano<nome> no Pixel. O InitiateCheckout fica por conta da Hotmart, para não duplicar. */
+  /** Nome do plano ("Basico" | "Completo"). */
   planName?: string;
   className?: string;
 };

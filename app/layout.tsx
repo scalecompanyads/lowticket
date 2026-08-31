@@ -1,19 +1,10 @@
 import type { Metadata } from "next";
-import { Fredoka, Manrope } from "next/font/google";
+import { Manrope } from "next/font/google";
 import { DeferredVercel } from "@/components/DeferredVercel";
 import { TrackingHead } from "@/components/TrackingHead";
 import { hero } from "@/lib/content";
 import "./globals.css";
 import "./page.css";
-
-const fredoka = Fredoka({
-  variable: "--font-fredoka",
-  subsets: ["latin", "latin-ext"],
-  weight: ["400", "600"],
-  display: "swap",
-  preload: true,
-  adjustFontFallback: true,
-});
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -25,13 +16,13 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Diário de Memórias — Crie Seu Scrapbooking de Forma Simples e Prática",
+  title: "Protocolo Cliente Todo Dia — Marketing Jurídico com Modelos Prontos",
   description:
-    "Use referências visuais para posicionar fotos, papéis, frases e elementos decorativos sem precisar inventar tudo do zero.",
+    "Use scripts e estruturas prontas para organizar Instagram, Google e atendimento ao cliente sem precisar inventar tudo do zero.",
   openGraph: {
-    title: "Diário de Memórias — Crie Seu Scrapbooking de Forma Simples e Prática",
+    title: "Protocolo Cliente Todo Dia — Marketing Jurídico com Modelos Prontos",
     description:
-      "Crie seu Diário de Memórias com modelos prontos que mostram exatamente como montar cada página.",
+      "Organize o marketing jurídico do seu escritório com modelos prontos que mostram exatamente como aplicar cada etapa.",
     locale: "pt_BR",
     type: "website",
   },
@@ -49,7 +40,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${fredoka.variable} ${manrope.variable} antialiased`}>
+    <html lang="pt-BR" className={`${manrope.variable} antialiased`}>
       <head>
         <TrackingHead />
         {hero.poster.src ? (

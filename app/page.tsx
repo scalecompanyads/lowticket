@@ -34,14 +34,14 @@ const PartsTimeline = dynamic(() =>
 );
 /* ── palette ── */
 const P = {
-  paper:     "#fff1c9",
-  blush:     "#fcd9d0",
-  mint:      "#d4f0ea",
-  peacock:   "#1f7a7a",
-  plum:      "#3e2450",
-  raspberry: "#c22745",
-  marigold:  "#e8a317",
-  card:      "#fff8ef",
+  paper:     "#ffffff",
+  blush:     "#f2f2f3",
+  mint:      "#e9e9eb",
+  peacock:   "#1a1a1a",
+  plum:      "#111111",
+  raspberry: "#3a43e3",
+  marigold:  "#3a43e3",
+  card:      "#ffffff",
 } as const;
 
 const BELOW = "cv-auto contain-paint";
@@ -108,7 +108,7 @@ function WaveDivider({ from, to }: { from: string; to: string }) {
 function Check({ className = "" }: { className?: string }) {
   return (
     <svg viewBox="0 0 18 13" fill="none" className={`w-4 shrink-0 ${className}`} aria-hidden>
-      <path d="M17 1L6 12L1 7" stroke="#1f7a7a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M17 1L6 12L1 7" stroke="#1a1a1a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
@@ -116,7 +116,7 @@ function Check({ className = "" }: { className?: string }) {
 function CrossIcon({ className = "" }: { className?: string }) {
   return (
     <svg viewBox="0 0 14 14" fill="none" className={`w-4 shrink-0 ${className}`} aria-hidden>
-      <path d="M1 1L13 13M13 1L1 13" stroke="#c22745" strokeWidth="2" strokeLinecap="round" />
+      <path d="M1 1L13 13M13 1L1 13" stroke="#3a43e3" strokeWidth="2" strokeLinecap="round" />
     </svg>
   );
 }
@@ -151,7 +151,7 @@ function FreePriceBadge({ price }: { price: string }) {
       <s className="text-[12px] font-medium tracking-wide text-white/60">
         {price}
       </s>
-      <strong className="mt-1 font-display text-[22px] font-semibold tracking-wide text-marigold">
+      <strong className="mt-1 font-display text-[22px] font-semibold tracking-wide text-white">
         GRÁTIS
       </strong>
     </span>
@@ -217,7 +217,7 @@ export default function Home() {
       <section className="scrap-hero px-5 pb-1 pt-4 text-center">
         <div className="mx-auto flex w-full max-w-[480px] flex-col items-center gap-5">
           {hero.secureSeal ? (
-            <span className="inline-flex items-center rounded-full border border-brand/20 bg-blush px-4 py-2 text-[12px] font-semibold leading-snug text-ink shadow-[0_2px_8px_oklch(0.52_0.2_15_/_0.12)]">
+            <span className="inline-flex items-center rounded-full border border-brand/20 bg-blush px-4 py-2 text-[12px] font-semibold leading-snug text-ink shadow-[0_2px_8px_rgba(0,0,0,0.08)]">
               {hero.secureSeal}
             </span>
           ) : null}
@@ -290,7 +290,7 @@ export default function Home() {
             <h2 className="mb-9 font-display text-[36px] font-semibold leading-[0.9] text-white">
               {whySection.title}
             </h2>
-            <div className="mx-auto grid w-full max-w-[900px] gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mx-auto grid w-full max-w-[720px] gap-4 sm:grid-cols-2">
               {whySection.cards.map((c) => (
                 <div
                   key={c.title}

@@ -1,21 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #c22745;
-  --color-cta: #00db6a;
-  --color-badge: #1f7a7a;
-  --color-ink: #2f241f;
-  --color-dark: #3e2450;
-  --color-navy: #1f7a7a;
-  --color-alert: #c22745;
-  --color-muted: #6f5e56;
-  --color-paper: #fff1c9;
-  --color-blush: #fcd9d0;
-  --color-mint: #d4f0ea;
-  --color-peacock: #1f7a7a;
-  --color-plum: #3e2450;
-  --color-marigold: #e8a317;
-  --font-display: var(--font-fredoka);
+  --color-brand: #3a43e3;
+  --color-cta: #3a43e3;
+  --color-badge: #3a43e3;
+  --color-ink: #1a1a1a;
+  --color-dark: #161616;
+  --color-navy: #1a1a1a;
+  --color-alert: #3a43e3;
+  --color-muted: #6b7280;
+  --color-paper: #ffffff;
+  --color-blush: #f2f2f3;
+  --color-mint: #e9e9eb;
+  --color-peacock: #1a1a1a;
+  --color-plum: #111111;
+  --color-marigold: #3a43e3;
+  --font-display: var(--font-manrope);
   --font-sans: var(--font-manrope);
 }
 
@@ -85,7 +85,7 @@ body {
   animation-play-state: paused;
   transform: translateY(-2px) scale(1.03);
   filter: brightness(1.08);
-  box-shadow: 0 6px 18px rgba(0, 219, 106, 0.4);
+  box-shadow: 0 6px 18px rgba(58, 67, 227, 0.4);
 }
 .cta-pulse:active {
   transform: scale(0.98);

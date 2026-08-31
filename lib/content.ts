@@ -10,81 +10,60 @@ export const footer = {
 
 export const checkout = {
   hero: "#plano-basico",
-  basic: "https://pay.hotmart.com/U107331805R?off=sz8wlcz6&checkoutMode=10&bid=1787952607380",
-  complete: "https://pay.hotmart.com/R107331870H?off=wcrp69ev&checkoutMode=10",
+  basic: "#checkout-placeholder-basico",
+  complete: "#checkout-placeholder-completo",
 };
 
 export const testimonials = {
-  title: "VEJA OS DIÁRIOS DE ALGUMAS ALUNAS",
+  title: "VEJA O QUE ADVOGADOS ESTÃO DIZENDO",
   items: [
     {
-      src: "/alunas/aluna-01-tbilisi.webp",
-      alt: "Diário de memórias de aluna com páginas de viagem a Tbilisi",
+      alt: "Depoimento de advogada sobre como os scripts prontos facilitaram o atendimento no WhatsApp",
       width: 720,
       height: 960,
     },
     {
-      src: "/alunas/aluna-02-june.webp",
-      alt: "Diário de memórias de aluna com vision board de junho",
+      alt: "Depoimento de advogado sobre a organização do Instagram do escritório",
       width: 720,
       height: 960,
     },
     {
-      src: "/alunas/aluna-03-hawaii-trip.webp",
-      alt: "Diário de memórias de aluna com viagem de amigas no Havaí",
+      alt: "Depoimento de advogada sobre deixar de depender só de indicação de clientes",
       width: 720,
-      height: 961,
+      height: 960,
     },
     {
-      src: "/alunas/aluna-04-lago.webp",
-      alt: "Diário de memórias de aluna com páginas de verão no lago",
+      alt: "Depoimento de advogado sobre aplicar o Google Meu Negócio Jurídico",
       width: 720,
-      height: 917,
-    },
-    {
-      src: "/alunas/aluna-05-hawaii.webp",
-      alt: "Diário de memórias de aluna com fotos de casal no Havaí",
-      width: 720,
-      height: 961,
-    },
-    {
-      src: "/alunas/aluna-06-2024.webp",
-      alt: "Diário de memórias de aluna com recapitulativo de 2024",
-      width: 720,
-      height: 956,
+      height: 960,
     },
   ] as { src?: string; alt: string; width: number; height: number }[],
 };
 
 export const materials = {
-  title: "VEJA OS MATERIAIS QUE VOCÊ VAI RECEBER JÁ",
+  title: "VEJA OS MODELOS QUE VOCÊ VAI RECEBER JÁ",
   imageSize: { width: 720, height: 900 },
   items: [
     {
-      src: "/diarios/diario-01-nova-york.webp",
-      alt: "Diário de memórias com páginas de viagem a Nova York",
+      alt: "Capa do Protocolo Comercial Jurídico com scripts prontos de atendimento",
     },
     {
-      src: "/diarios/diario-02-aniversario.webp",
-      alt: "Diário de memórias com fotos de aniversário e amigas",
+      alt: "Modelo de bio e destaques para Instagram Jurídico",
     },
     {
-      src: "/diarios/diario-03-vintage.webp",
-      alt: "Diário de memórias estilo vintage com recortes e frases",
+      alt: "Biblioteca de Conteúdo Jurídico com ideias prontas de postagem",
     },
     {
-      src: "/diarios/diario-04-ilha.webp",
-      alt: "Diário de memórias de viagem à ilha com anotações à mão",
+      alt: "Guia de configuração do Google Meu Negócio Jurídico",
     },
     {
-      src: "/diarios/diario-05-narbonne.webp",
-      alt: "Diário de memórias de viagem a Narbonne, na França",
+      alt: "Checklist de scripts extras de atendimento ao cliente",
     },
   ] as { src?: string; alt: string }[],
 };
 
 export const theme = {
-  brandColor: "#c22745",
+  brandColor: "#3a43e3",
 };
 
 export const offerBar = {
@@ -92,67 +71,88 @@ export const offerBar = {
 };
 
 export const hero = {
-  logo: { src: "", alt: "Diário de Memórias", width: 200, height: 60 },
+  logo: { src: "", alt: "Protocolo Cliente Todo Dia", width: 200, height: 60 },
   secureSeal: "",
-  titleHighlight: "Crie seu Diário de Memórias Personalizado",
-  title: "com modelos prontos que mostram exatamente como montar cada página.",
+  titleHighlight: "Organize o Marketing Jurídico do Seu Escritório com Modelos Prontos",
+  title: "guias práticos que mostram exatamente como estruturar Instagram, Google e atendimento ao cliente.",
   image: {
-    alt: "Diário de memórias aberto sobre a mesa, com fotos de família, flores de papel e frases escritas à mão",
+    alt: "Advogado organizando perfil do Instagram, Google Meu Negócio e atendimento ao cliente com modelos prontos",
     width: 960,
     height: 960,
   },
-  poster: { src: "/hero.webp" },
+  poster: { src: "" },
   subtitle:
-    "Use referências visuais para posicionar fotos, papéis, frases e elementos decorativos sem precisar inventar tudo do zero.",
-  ctaLabel: "QUERO CRIAR MEU DIÁRIO DE MEMÓRIAS",
+    "Use scripts e estruturas prontas para se posicionar no digital e atrair clientes sem depender só de indicação.",
+  ctaLabel: "QUERO ORGANIZAR MEU MARKETING JURÍDICO",
   deliveryNote: "📲 Você recebe tudo na hora, direto no seu e-mail",
   socialProofLabel: "",
 };
 
 export const whySection = {
-  title: "",
-  cards: [] as { icon: string; title: string; desc: string }[],
+  title: "POR QUE ESSE PROTOCOLO FUNCIONA",
+  cards: [
+    {
+      icon: "📋",
+      title: "Modelos prontos",
+      desc: "Você não parte do zero: é só copiar a estrutura e adaptar para o seu escritório.",
+    },
+    {
+      icon: "💬",
+      title: "Scripts adaptáveis",
+      desc: "Frases prontas para WhatsApp e redes sociais que você personaliza em minutos.",
+    },
+    {
+      icon: "👀",
+      title: "Exemplos visuais",
+      desc: "Veja como cada ajuste fica pronto antes de aplicar no seu perfil.",
+    },
+    {
+      icon: "🗂️",
+      title: "Passo a passo organizado",
+      desc: "Cada área — Instagram, Google, conteúdo e atendimento — com sua própria sequência simples de aplicar.",
+    },
+  ] as { icon: string; title: string; desc: string }[],
 };
 
 export const idealSection = {
-  title: "ESTE DIÁRIO É IDEAL PARA VOCÊ QUE DESEJA",
+  title: "ESSE PROTOCOLO É IDEAL PARA VOCÊ QUE DESEJA",
   items: [
-    { title: "Tirar suas fotos da galeria e transformar em lembranças de verdade", desc: "" },
-    { title: "Criar scrapbook sem precisar inventar tudo do zero", desc: "" },
-    { title: "Aproveitar melhor os materiais que já tem em casa", desc: "" },
-    { title: "Ter mais segurança na hora de montar cada página", desc: "" },
-    { title: "Registrar viagens, família e momentos especiais de um jeito mais pessoal", desc: "" },
-    { title: "Voltar a criar sem depender de inspiração o tempo todo", desc: "" },
+    { title: "Parar de depender só de indicação para conseguir clientes", desc: "" },
+    { title: "Organizar a presença digital do escritório de um jeito profissional", desc: "" },
+    { title: "Saber exatamente o que postar sem travar na hora de criar conteúdo", desc: "" },
+    { title: "Conduzir conversas com clientes sem parecer improvisado", desc: "" },
+    { title: "Transmitir mais credibilidade em todos os pontos de contato digital", desc: "" },
+    { title: "Ter um roteiro claro para aplicar sem precisar reinventar cada etapa", desc: "" },
   ],
 };
 
 export const offerSection = {
-  title: "Tudo o que você vai receber no Diário de Memórias",
+  title: "TUDO O QUE VOCÊ VAI RECEBER NO PROTOCOLO CLIENTE TODO DIA",
   pill: "⚡ACESSO IMEDIATO",
   cardTitle: "TUDO FOI ORGANIZADO PARA SER SIMPLES E FÁCIL DE APLICAR.",
-  lead: "Você escolhe o modelo e já pode começar na mesma hora.",
+  lead: "Você escolhe por onde começar e já pode aplicar na mesma hora.",
   image: {
-    src: "/kit-diario.webp",
-    alt: "Kit do Diário de Memórias: diário aberto com páginas de viagem, títulos, molduras, frases e elementos prontos para imprimir",
+    src: "",
+    alt: "Kit do Protocolo Cliente Todo Dia com scripts, modelos e guias prontos para aplicar",
     width: 1024,
     height: 1024,
   },
   howItWorks: [
     {
-      title: "PARTE 1 — Organize sua montagem",
-      desc: "Veja quais fotos, papéis, recortes, elementos e materiais separar antes de começar.",
+      title: "PARTE 1 — Organize seu atendimento",
+      desc: "Mapeie os pontos em que você hoje improvisa e veja onde um modelo pronto resolve mais rápido.",
     },
     {
-      title: "PARTE 2 — Monte seu Diário de Memórias",
-      desc: "Entenda a estrutura do diário e visualize como o projeto completo será montado.",
+      title: "PARTE 2 — Scripts de WhatsApp prontos",
+      desc: "Mensagens de primeiro contato, follow-up e fechamento para você copiar e adaptar.",
     },
     {
-      title: "PARTE 3 — Modelos Prontos de Montagem",
-      desc: "Siga modelos visuais de capa, abertura e páginas internas para posicionar fotos, papéis, frases e elementos com mais facilidade.",
+      title: "PARTE 3 — Modelos de Condução de Conversa",
+      desc: "Como conduzir do primeiro contato até o fechamento sem parecer robótico.",
     },
     {
       title: "Em cada modelo você verá:",
-      desc: "Quantidade e tamanho das fotos, posição dos elementos, espaços para títulos e memórias e uma ordem simples de montagem.",
+      desc: "Frases prontas, quando usar cada uma e um passo a passo simples de adaptação para o seu caso.",
     },
   ],
 };
@@ -164,50 +164,47 @@ export const bonusSection = {
   items: [
     {
       label: "BÔNUS #1",
-      title: "24 Elementos Prontos para Imprimir e Recortar",
+      title: "Modelos de Instagram Jurídico",
       features: [
-        "6 Tags de Data e Lugar",
-        "6 Selos de Memória",
-        "6 Etiquetas para Fotos",
-        "6 Detalhes Decorativos",
+        "Bio pronta para copiar e adaptar",
+        "3 modelos de destaques organizados",
+        "Roteiro de nome e categoria de perfil",
+        "Checklist de primeira impressão do perfil",
       ],
       price: "R$27",
-      src: "/bonus/bonus-01-elementos.webp",
     },
     {
       label: "BÔNUS #2",
-      title: "20 Frases Prontas para Imprimir e Usar",
+      title: "Biblioteca de Conteúdo Jurídico",
       features: [
-        "5 Frases para Abertura",
-        "5 Frases para Momentos Especiais",
-        "5 Frases para Pequenas Memórias do Cotidiano",
-        "5 Frases para Encerramento",
+        "15 ideias de conteúdo institucional",
+        "10 ideias de conteúdo de autoridade",
+        "10 ideias de conteúdo de conversão",
+        "Calendário simples de postagens",
       ],
       price: "R$27",
-      src: "/bonus/bonus-02-frases.webp",
     },
     {
       label: "BÔNUS #3",
-      title: "8 Molduras para Fotos Prontas para Imprimir",
+      title: "Google Meu Negócio Jurídico",
       features: [
-        "2 Molduras Estilo Polaroid",
-        "2 Molduras Verticais",
-        "2 Molduras Quadradas",
-        "2 Molduras Estilo Filme",
+        "Passo a passo de configuração do perfil",
+        "Modelo de resposta para avaliações",
+        "Checklist de SEO local básico",
+        "Guia de fotos e categorias",
       ],
       price: "R$27",
-      src: "/bonus/bonus-03-molduras.webp",
     },
     {
       label: "BÔNUS #4",
-      title: "6 Papéis de Fundo Prontos para Imprimir",
+      title: "Scripts Extras de Atendimento",
       features: [
-        "2 Fundos Neutros",
-        "2 Fundos Estampados Suaves",
-        "2 Fundos Texturizados",
+        "Respostas para as objeções mais comuns",
+        "Script de reativação de contatos antigos",
+        "Modelo de mensagem de pós-atendimento",
+        "Frases para pedir indicação sem parecer forçado",
       ],
       price: "R$27",
-      src: "/bonus/bonus-04-papeis.webp",
     },
   ] as {
     label: string;
@@ -224,17 +221,17 @@ export const plansSection = {
   basic: {
     name: "PLANO BÁSICO",
     image: {
-      src: "/plano-basico.webp",
-      alt: "Diário de Memórias aberto com páginas de viagem, fotos, tesoura e washi tape",
+      src: "",
+      alt: "Protocolo Comercial Jurídico aberto com scripts de atendimento e mensagens prontas para WhatsApp",
       width: 1024,
       height: 1024,
     },
     receiveLabel: "Você recebe:",
     features: [
-      "Guia de organização da montagem",
-      "Estrutura completa do diário",
-      "Modelos prontos de capa e páginas",
-      "Guias visuais de montagem",
+      "Protocolo Comercial Jurídico completo",
+      "Scripts prontos de WhatsApp",
+      "Modelos de condução de conversa",
+      "Guias visuais de aplicação",
     ],
     oldPrice: "R$37,90",
     price: "R$27,90",
@@ -244,32 +241,32 @@ export const plansSection = {
   },
   complete: {
     badge: "🔥 ÚLTIMA CHANCE — OFERTA TERMINA HOJE",
-    name: "PLANO COMPLETO",
+    name: "PROTOCOLO ADVOGADO POSICIONADO",
     allBonusesLabel: "",
     image: {
-      src: "/plano-completo.webp",
-      alt: "Kit do Plano Completo: diário aberto com títulos, molduras, ilustrações e elementos prontos para imprimir",
+      src: "",
+      alt: "Kit completo do Protocolo Advogado Posicionado com Instagram, conteúdo, Google e scripts prontos",
       width: 1024,
       height: 1024,
     },
     pill: "⚡4x MAIS CONTEÚDOS",
     soldLabel: "⚡MAIS VENDIDO",
     features: [
-      "Diário de Memórias",
-      "🎁BÔNUS 1 - 24 Elementos Prontos para Imprimir e Recortar",
-      "🎁BÔNUS 2 - 20 Frases Prontas para Imprimir e Usar",
-      "🎁BÔNUS 3 - 8 Molduras para Fotos Prontas para Imprimir",
-      "🎁BÔNUS 4 - 6 Papéis de Fundo Prontos para Imprimir",
+      "Protocolo Comercial Jurídico",
+      "🎁BÔNUS 1 - Modelos de Instagram Jurídico",
+      "🎁BÔNUS 2 - Biblioteca de Conteúdo Jurídico",
+      "🎁BÔNUS 3 - Google Meu Negócio Jurídico",
+      "🎁BÔNUS 4 - Scripts Extras de Atendimento",
       "Acesso imediato ao material",
     ],
     oldPrice: "R$67,90",
     price: "R$37,90",
     installments: "ou 6x de R$6,48 no cartão.",
     savings: "Você economiza R$30,00",
-    ctaLabel: "QUERO O PLANO COMPLETO",
+    ctaLabel: "QUERO O PROTOCOLO COMPLETO",
   },
   upsellNote: {
-    alert: "92% das pessoas aproveitam o plano abaixo 👇",
+    alert: "92% dos advogados aproveitam o plano abaixo 👇",
     body: "",
     highlight: "",
   },
@@ -287,7 +284,7 @@ export const guarantee = {
   intro: "🔒 Compra 100% segura e garantida.",
   lead: "Isso significa que, se você achar que:",
   bullets: [
-    "o material não faz sentido para suas criações",
+    "o material não se encaixa na sua área de atuação",
     "os modelos não atendem suas expectativas",
     "ou simplesmente não quiser continuar.",
   ],
@@ -297,57 +294,78 @@ export const guarantee = {
 };
 
 export const stepsSection = {
-  title: "",
-  subtitle: "",
-  ctaLabel: "",
-  steps: [] as { icon: string; title: string; desc: string; items: string[] }[],
+  title: "COMO FUNCIONA NA PRÁTICA",
+  subtitle: "Do pagamento à aplicação, em poucos passos",
+  ctaLabel: "QUERO COMEÇAR AGORA",
+  steps: [
+    {
+      icon: "",
+      title: "1. Finalize sua compra",
+      desc: "Escolha o plano ideal e conclua o pagamento em poucos cliques.",
+      items: [] as string[],
+    },
+    {
+      icon: "",
+      title: "2. Acesse a área de membros",
+      desc: "Você recebe o login por e-mail assim que a compra é confirmada.",
+      items: [] as string[],
+    },
+    {
+      icon: "",
+      title: "3. Baixe os arquivos",
+      desc: "Todos os guias em PDF ficam disponíveis para download imediato.",
+      items: [] as string[],
+    },
+    {
+      icon: "",
+      title: "4. Aplique no seu escritório",
+      desc: "Siga os modelos prontos e comece a organizar seu marketing jurídico hoje mesmo.",
+      items: [] as string[],
+    },
+  ] as { icon: string; title: string; desc: string; items: string[] }[],
 };
 
 export const faqTitle = "PERGUNTAS FREQUENTES";
 
 export const faq: readonly (readonly [string, string])[] = [
   [
-    "O que é o Diário de Memórias?",
-    "O Diário de Memórias é um material digital prático com modelos prontos e guias visuais para ajudar você a montar um scrapbook de forma mais simples, organizada e sem precisar criar tudo do zero.",
+    "O que é o Protocolo Cliente Todo Dia?",
+    "É um material digital prático com modelos prontos, scripts e guias visuais para você organizar o marketing jurídico do seu escritório sem precisar criar tudo do zero.",
   ],
   [
-    "O Diário de Memórias é um curso?",
-    "Não. É um material digital prático com orientações, modelos prontos e referências visuais para você seguir durante a montagem.",
+    "Preciso ter conhecimento de marketing para usar?",
+    "Não. O material foi pensado em formato visual e prático, sem termos técnicos, para você aplicar mesmo sem experiência na área.",
   ],
   [
-    "O que eu recebo no Plano Básico?",
-    "Você recebe o Diário de Memórias, com organização da montagem, estrutura do projeto e modelos visuais das páginas.",
+    "O que eu recebo depois da compra?",
+    "Você recebe os guias em PDF com modelos, scripts e estruturas prontas para aplicar no seu escritório.",
   ],
   [
-    "O que eu recebo no Plano Completo?",
-    "Além do Diário de Memórias, você recebe os 4 bônus com elementos, frases, molduras e papéis de fundo prontos para imprimir.",
+    "Consigo adaptar para minha área de atuação?",
+    "Sim. Os modelos servem como base e podem ser ajustados para qualquer área do Direito.",
   ],
   [
-    "Preciso comprar muitos materiais para começar?",
-    "Não necessariamente. O material ajuda você a aproveitar fotos, papéis, recortes e elementos que já possui, além dos arquivos imprimíveis disponíveis no Plano Completo.",
+    "Funciona para advogados autônomos ou só para escritórios grandes?",
+    "Funciona para os dois casos. O material foi criado pensando também em quem atua sozinho.",
   ],
   [
-    "Posso usar o material para registrar diferentes momentos?",
-    "Sim. Você pode adaptar as páginas para viagens, momentos em família, acontecimentos especiais e outras memórias que queira guardar.",
+    "Preciso aplicar todos os guias ao mesmo tempo?",
+    "Não. Você pode começar pelo que for mais urgente para o seu momento e seguir para os outros depois.",
   ],
   [
     "Como vou receber o material?",
-    "Você receberá o material imediatamente no seu e-mail assim que realizar a compra.",
+    "Você recebe a confirmação por e-mail com o acesso à área de membros.",
   ],
   [
     "O acesso é liberado imediatamente após a compra?",
-    "Sim.",
+    "Sim, assim que o pagamento é confirmado.",
   ],
   [
     "Quais são as formas de pagamento?",
     "Confira as formas de pagamento disponíveis no checkout.",
   ],
   [
-    "O produto possui garantia?",
-    "Sim, de 7 dias.",
-  ],
-  [
-    "Preciso saber fazer scrapbook para usar o material?",
-    "Não. Os modelos e guias visuais foram pensados justamente para mostrar como organizar fotos, papéis, frases e elementos sem precisar criar tudo do zero.",
+    "E se eu não gostar do material?",
+    "Você tem 7 dias de garantia para solicitar o reembolso caso o material não atenda às suas necessidades.",
   ],
 ];

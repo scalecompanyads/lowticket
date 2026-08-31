@@ -1,13 +1,13 @@
 .scrap-page {
   --cta: var(--color-cta);
-  --p-paper: #fff1c9;
-  --p-blush: #fcd9d0;
-  --p-mint: #d4f0ea;
-  --p-peacock: #1f7a7a;
-  --p-plum: #3e2450;
-  --p-raspberry: #c22745;
-  --p-marigold: #e8a317;
-  --p-card: #fff8ef;
+  --p-paper: #ffffff;
+  --p-blush: #f2f2f3;
+  --p-mint: #e9e9eb;
+  --p-peacock: #1a1a1a;
+  --p-plum: #111111;
+  --p-raspberry: #3a43e3;
+  --p-marigold: #3a43e3;
+  --p-card: #ffffff;
 }
 
 .scrap-page .cta-pulse,
@@ -22,9 +22,9 @@
 
 .scrap-hero {
   background:
-    radial-gradient(ellipse 90% 70% at 0% -10%, oklch(0.86 0.1 20 / 0.55), transparent 62%),
-    radial-gradient(ellipse 70% 55% at 100% 0%, oklch(0.88 0.08 175 / 0.55), transparent 58%),
-    radial-gradient(ellipse 55% 45% at 50% 110%, oklch(0.9 0.12 85 / 0.45), transparent 55%),
+    radial-gradient(ellipse 90% 70% at 0% -10%, oklch(0.94 0 0 / 0.7), transparent 62%),
+    radial-gradient(ellipse 70% 55% at 100% 0%, oklch(0.95 0 0 / 0.7), transparent 58%),
+    radial-gradient(ellipse 55% 45% at 50% 110%, oklch(0.96 0 0 / 0.6), transparent 55%),
     var(--p-paper);
 }
 
@@ -62,7 +62,7 @@
     180deg,
     color-mix(in srgb, var(--cta), white 22%) 0%,
     var(--cta) 55%,
-    color-mix(in srgb, var(--cta), #1f7a7a 35%) 100%
+    color-mix(in srgb, var(--cta), black 35%) 100%
   );
 }
 
@@ -97,7 +97,7 @@
   border-radius: 999px;
   border: 2px solid rgb(255 255 255 / 0.35);
   background: color-mix(in srgb, var(--p-plum) 86%, black);
-  font-family: var(--font-fredoka), sans-serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: rgb(255 255 255 / 0.55);
@@ -201,7 +201,7 @@
 
   .parts-timeline .parts-timeline__node {
     transform: scale(1);
-    color: #fff8ef;
+    color: #ffffff;
     border-color: var(--cta);
     background: color-mix(in srgb, var(--cta), var(--p-plum) 28%);
     box-shadow: 0 0 0 4px color-mix(in srgb, var(--cta), transparent 82%);
