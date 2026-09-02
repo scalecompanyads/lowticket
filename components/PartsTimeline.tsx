@@ -6,8 +6,9 @@ type Step = { title: string; desc: string };
 
 export function PartsTimeline({ steps }: { steps: readonly Step[] }) {
   const rootRef = useRef<HTMLDivElement>(null);
-  const parts = steps.filter((s) => /^PARTE\s+\d/i.test(s.title));
-  const notes = steps.filter((s) => !/^PARTE\s+\d/i.test(s.title));
+  const isStep = (title: string) => /^(PARTE|GUIA)\s+\d/i.test(title);
+  const parts = steps.filter((s) => isStep(s.title));
+  const notes = steps.filter((s) => !isStep(s.title));
 
   useEffect(() => {
     const root = rootRef.current;
@@ -63,10 +64,11 @@ export function PartsTimeline({ steps }: { steps: readonly Step[] }) {
           </li>
         ))}
       </ol>
-      {notes.map((note) => (
+      {notes.map((note, i) => (
         <div
           key={note.title}
           className="parts-timeline__note mt-5 rounded-2xl px-4 py-4"
+          style={{ "--i": parts.length + i } as React.CSSProperties}
         >
           <h3 className="font-display text-[18px] font-semibold leading-snug text-white">
             {note.title}

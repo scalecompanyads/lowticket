@@ -14,7 +14,6 @@ import {
   plansSection,
   guarantee,
   contact,
-  testimonials,
   stepsSection,
   faq,
   faqTitle,
@@ -24,9 +23,6 @@ import {
 
 const StickyCta = dynamic(() =>
   import("@/components/StickyCta").then((m) => m.StickyCta),
-);
-const TestimonialCarousel = dynamic(() =>
-  import("@/components/TestimonialCarousel").then((m) => m.TestimonialCarousel),
 );
 const PartsTimeline = dynamic(() =>
   import("@/components/PartsTimeline").then((m) => m.PartsTimeline),
@@ -285,7 +281,7 @@ export default function Home() {
                     {c.icon}
                   </span>
                   <div>
-                    <p className="font-display text-[19px] font-semibold leading-snug text-ink">
+                    <p className="font-display text-[19px] font-bold leading-snug text-ink">
                       {c.title}
                     </p>
                     <p className={`mt-1 ${SUB} leading-snug text-muted`}>
@@ -325,7 +321,7 @@ export default function Home() {
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <p className="font-display text-[16px] font-bold uppercase leading-tight text-ink">
+                <p className="font-display text-[16px] font-extrabold uppercase leading-tight text-ink">
                   {item.title}
                 </p>
                 {item.desc ? (
@@ -371,24 +367,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Wave plum→paper */}
-      <WaveDivider from={P.plum} to={P.paper} />
-
-      {/* ══ DEPOIMENTOS ══ */}
-      <section
-        style={{ backgroundColor: P.paper }}
-        className={`${BELOW} px-5 pb-16 pt-12 text-center`}
-      >
-        <div className="mx-auto flex w-full max-w-[553px] flex-col items-center gap-7 lg:max-w-[960px]">
-          <h2 className="max-w-[480px] font-display text-[32px] font-semibold leading-[0.95] text-ink">
-            {testimonials.title}
-          </h2>
-          <TestimonialCarousel items={testimonials.items} />
-        </div>
-      </section>
-
-      {/* Wave paper→mint */}
-      <WaveDivider from={P.paper} to={P.mint} />
+      {/* Wave plum→mint */}
+      <WaveDivider from={P.plum} to={P.mint} />
 
       {/* ══ PLANOS ══ */}
       <section
@@ -403,22 +383,13 @@ export default function Home() {
           </h2>
 
           <div id="plano" className="flex w-full scroll-mt-[88px] flex-col items-center lg:scroll-mt-8">
-            {plansSection.plan.soldLabel ? (
-              <Badge className="relative z-10 -mb-3">{plansSection.plan.soldLabel}</Badge>
-            ) : null}
             <div
               className="flex w-full flex-col items-center gap-4 rounded-2xl px-6 pb-10 pt-6"
               style={{ backgroundColor: P.plum }}
             >
-              <span
-                className="mt-3 inline-block whitespace-nowrap rounded-full px-3 py-1.5 font-display text-[10px] font-bold text-white"
-                style={{ backgroundColor: P.raspberry }}
-              >
-                {plansSection.plan.badge}
-              </span>
               <p
-                className="rounded-full px-6 py-2 font-display text-[22px] font-semibold text-white sm:text-[24px]"
-                style={{ backgroundColor: P.peacock }}
+                className="mt-3 rounded-full px-6 py-2 font-display text-[22px] font-bold text-white sm:text-[24px]"
+                style={{ backgroundColor: P.raspberry }}
               >
                 {plansSection.plan.name}
               </p>
@@ -441,7 +412,7 @@ export default function Home() {
               <p className="font-display text-[18px] text-alert line-through">
                 de {plansSection.plan.oldPrice} por:
               </p>
-              <p className="font-display text-[60px] font-semibold leading-none text-white">
+              <p className="font-display text-[60px] font-bold leading-none text-white">
                 {plansSection.plan.price}
               </p>
               <p className={`font-display ${SUB} text-white`}>
@@ -554,7 +525,7 @@ export default function Home() {
                     )}
                   </div>
                   <div className="mb-4 flex flex-1 flex-col gap-1 rounded-2xl scrap-card p-5">
-                    <p className="font-display text-[20px] font-semibold text-ink">{s.title}</p>
+                    <p className="font-display text-[20px] font-bold text-ink">{s.title}</p>
                     {s.desc ? (
                       <p className={`${SUB} text-muted`}>{s.desc}</p>
                     ) : null}
@@ -602,7 +573,7 @@ export default function Home() {
                 key={q}
                 className="scrap-faq-item rounded-xl"
               >
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 font-display text-[15px] font-semibold text-ink">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 font-display text-[15px] font-bold text-ink">
                   {i + 1}. {q}
                   <svg
                     viewBox="0 0 13 7"

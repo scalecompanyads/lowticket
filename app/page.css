@@ -20,6 +20,10 @@
   );
 }
 
+.scrap-page main > section:not(.scrap-hero) :is(h2, h3) {
+  font-weight: 800;
+}
+
 .scrap-hero {
   background:
     radial-gradient(ellipse 90% 70% at 0% -10%, oklch(0.94 0 0 / 0.7), transparent 62%),
@@ -141,7 +145,8 @@
 }
 
 .parts-timeline.is-in .parts-timeline__note {
-  animation: parts-copy 0.55s cubic-bezier(0.16, 1, 0.3, 1) 1.75s forwards;
+  animation: parts-copy 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: calc(0.18s + var(--i, 0) * 0.62s);
 }
 
 @keyframes parts-fill {

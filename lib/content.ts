@@ -41,22 +41,35 @@ export const testimonials = {
 
 export const materials = {
   title: "VEJA OS MODELOS QUE VOCÊ VAI RECEBER JÁ",
-  imageSize: { width: 720, height: 900 },
+  imageSize: { width: 768, height: 1024 },
   items: [
     {
-      alt: "Capa do Protocolo Comercial Jurídico com scripts prontos de atendimento",
+      src: "/entregaveis-v2/modelo-1.webp",
+      alt: "Sumário da Biblioteca de Conteúdos Jurídicos com ganchos institucionais, de autoridade e de conversão",
     },
     {
-      alt: "Modelo de bio e destaques para Instagram Jurídico",
+      src: "/entregaveis-v2/modelo-2.webp",
+      alt: "Modelo de gancho de conversão para reconhecer o problema e indicar o próximo passo",
     },
     {
-      alt: "Biblioteca de Conteúdo Jurídico com ideias prontas de postagem",
+      src: "/entregaveis-v2/modelo-3.webp",
+      alt: "Sete CTAs informativas prontas para adaptar em vídeos jurídicos",
     },
     {
-      alt: "Guia de configuração do Google Meu Negócio Jurídico",
+      src: "/entregaveis-v2/modelo-4.webp",
+      alt: "Ganchos institucionais para apresentar quem você é e sua forma de atendimento",
     },
     {
-      alt: "Checklist de scripts extras de atendimento ao cliente",
+      src: "/entregaveis-v2/modelo-5.webp",
+      alt: "Guia de destaques do Instagram Jurídico com seis capas e padrão visual",
+    },
+    {
+      src: "/entregaveis-v2/modelo-6.webp",
+      alt: "Checklist de aplicação antes de gravar conteúdo jurídico",
+    },
+    {
+      src: "/entregaveis-v2/modelo-7.webp",
+      alt: "Modelo de bio para Instagram Jurídico com quatro perguntas essenciais",
     },
   ] as { src?: string; alt: string }[],
 };
@@ -79,7 +92,7 @@ export const hero = {
     width: 1024,
     height: 1024,
   },
-  poster: { src: "/hero.webp" },
+  poster: { src: "/hero.webp?v=2" },
   subtitle:
     "Use scripts e estruturas prontas para se posicionar no digital e atrair clientes sem depender só de indicação.",
   ctaLabel: "QUERO ORGANIZAR MEU MARKETING JURÍDICO",
@@ -131,8 +144,8 @@ export const offerSection = {
   cardTitle: "TUDO FOI ORGANIZADO PARA SER SIMPLES E FÁCIL DE APLICAR.",
   lead: "Você escolhe por onde começar e já pode aplicar na mesma hora.",
   image: {
-    src: "",
-    alt: "Kit do Protocolo Cliente Todo Dia com scripts, modelos e guias prontos para aplicar",
+    src: "/entregaveis-v2/kit-protocolo.webp",
+    alt: "Kit do Protocolo Cliente Todo Dia com os guias Google Perfil da Empresa, Comercial Jurídico, Instagram Jurídico e Biblioteca de Conteúdos Jurídicos",
     width: 1024,
     height: 1024,
   },
@@ -176,16 +189,14 @@ export const plansSection = {
   pill: "🔥 ÚLTIMA CHANCE — OFERTA TERMINA HOJE",
   title: "GARANTA SEU ACESSO AGORA",
   plan: {
-    badge: "🔥 ÚLTIMA CHANCE — OFERTA TERMINA HOJE",
     name: "PROTOCOLO CLIENTE TODO DIA",
     image: {
-      src: "",
-      alt: "Kit completo do Protocolo Cliente Todo Dia com Instagram, conteúdo, Google e scripts prontos",
+      src: "/entregaveis-v2/plano-protocolo.webp",
+      alt: "Kit completo do Protocolo Cliente Todo Dia com livros, modelos impressos, laptop e materiais de marketing jurídico",
       width: 1024,
       height: 1024,
     },
     pill: "⚡ACESSO IMEDIATO",
-    soldLabel: "⚡MAIS VENDIDO",
     receiveLabel: "Você recebe:",
     features: [
       "Protocolo Comercial Jurídico completo",
