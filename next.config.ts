@@ -38,7 +38,7 @@ const nextConfig: NextConfig = {
         ],
       },
       {
-        source: "/:file(avatar-*.webp|guarantee-seal.webp|favicon.svg|hero.webp|kit-diario.webp|plano.webp)",
+        source: "/:file(avatar-*.webp|guarantee-seal.webp|favicon*.png|apple-touch-icon.png|icon-512.png|hero.webp|kit-diario.webp|plano.webp)",
         headers: [
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
         ],
