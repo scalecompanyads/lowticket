@@ -49,7 +49,7 @@ export default async function RootLayout({
             as="image"
             href={hero.poster.src}
             fetchPriority="high"
-            type="image/png"
+            type="image/webp"
           />
         ) : null}
       </head>

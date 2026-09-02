@@ -11,7 +11,6 @@ import {
   whySection,
   idealSection,
   offerSection,
-  bonusSection,
   plansSection,
   guarantee,
   contact,
@@ -105,10 +104,10 @@ function WaveDivider({ from, to }: { from: string; to: string }) {
   );
 }
 
-function Check({ className = "" }: { className?: string }) {
+function Check({ className = "", color = "#1a1a1a" }: { className?: string; color?: string }) {
   return (
     <svg viewBox="0 0 18 13" fill="none" className={`w-4 shrink-0 ${className}`} aria-hidden>
-      <path d="M17 1L6 12L1 7" stroke="#1a1a1a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M17 1L6 12L1 7" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
@@ -142,30 +141,16 @@ function Badge({ children, className = "" }: { children: React.ReactNode; classN
   );
 }
 
-function FreePriceBadge({ price }: { price: string }) {
-  return (
-    <span
-      className="inline-flex flex-col items-center rounded-2xl bg-badge px-6 py-3 leading-none"
-      aria-label={`De ${price} por grátis`}
-    >
-      <s className="text-[12px] font-medium tracking-wide text-white/60">
-        {price}
-      </s>
-      <strong className="mt-1 font-display text-[22px] font-semibold tracking-wide text-white">
-        GRÁTIS
-      </strong>
-    </span>
-  );
-}
-
 function FeatureItem({
   text,
   light = false,
   struck = false,
+  greenCheck = false,
 }: {
   text: string;
   light?: boolean;
   struck?: boolean;
+  greenCheck?: boolean;
 }) {
   return (
     <li
@@ -176,7 +161,7 @@ function FeatureItem({
       {struck ? (
         <CrossIcon className="mt-[2px]" />
       ) : (
-        <Check className="mt-[2px]" />
+        <Check className="mt-[2px]" color={greenCheck ? "#22c55e" : undefined} />
       )}
       <span>{text}</span>
     </li>
@@ -386,60 +371,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Wave plum→peacock */}
-      <WaveDivider from={P.plum} to={P.peacock} />
-
-      {/* ══ BÔNUS ══ */}
-      <section
-        style={{ backgroundColor: P.peacock }}
-        className={`${BELOW} px-5 pb-16 pt-12 text-center`}
-      >
-        <div className="mx-auto flex max-w-[1040px] flex-col items-center gap-6">
-          <h2 className="font-display text-[32px] font-semibold leading-snug text-white">
-            {bonusSection.titleLines.map((line, i) => (
-              <span key={line}>
-                {i > 0 ? <br /> : null}
-                {line}
-              </span>
-            ))}
-          </h2>
-          <Badge>{bonusSection.pill}</Badge>
-          <div className="grid w-full gap-5 sm:grid-cols-2">
-            {bonusSection.items.map((b) => (
-              <article
-                key={b.title}
-                className="flex flex-col items-center gap-4 rounded-2xl scrap-card px-5 pb-6 pt-5 text-center"
-              >
-                <LazyImg
-                  src={b.src}
-                  alt={b.title}
-                  width={900}
-                  height={900}
-                  className="w-full rounded-xl"
-                />
-                <p className="font-display text-[13px] font-bold tracking-wide text-brand">
-                  {b.label}
-                </p>
-                <h3 className="font-display text-[20px] font-semibold leading-snug text-ink">
-                  {b.title}
-                </h3>
-                <ul className="w-full max-w-[280px] text-left">
-                  {b.features.map((f) => (
-                    <FeatureItem key={f} text={f} />
-                  ))}
-                </ul>
-                <FreePriceBadge price={b.price} />
-                <p className="text-[12px] font-medium leading-snug text-muted">
-                  {bonusSection.exclusiveNote}
-                </p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Wave peacock→paper */}
-      <WaveDivider from={P.peacock} to={P.paper} />
+      {/* Wave plum→paper */}
+      <WaveDivider from={P.plum} to={P.paper} />
 
       {/* ══ DEPOIMENTOS ══ */}
       <section
@@ -463,124 +396,71 @@ export default function Home() {
         style={{ backgroundColor: P.mint }}
         className="px-5 pb-16 pt-12 text-center"
       >
-        <div className="mx-auto max-w-[1040px]">
+        <div className="mx-auto max-w-[480px]">
           <Badge className="whitespace-nowrap px-3 py-1.5 text-[10px]">{plansSection.pill}</Badge>
           <h2 className="my-7 font-display text-[38px] font-semibold leading-[0.9] text-ink">
             {plansSection.title}
           </h2>
 
-          <div className="flex w-full flex-col items-center gap-10 lg:grid lg:grid-cols-2 lg:items-start lg:gap-6">
-            {/* Plano Básico */}
+          <div id="plano" className="flex w-full scroll-mt-[88px] flex-col items-center lg:scroll-mt-8">
+            {plansSection.plan.soldLabel ? (
+              <Badge className="relative z-10 -mb-3">{plansSection.plan.soldLabel}</Badge>
+            ) : null}
             <div
-              id="plano-basico"
-              className="flex w-full max-w-[480px] scroll-mt-[88px] flex-col items-center gap-4 rounded-2xl px-6 pb-10 pt-6 lg:max-w-none lg:scroll-mt-8"
-              style={{ backgroundColor: P.paper }}
+              className="flex w-full flex-col items-center gap-4 rounded-2xl px-6 pb-10 pt-6"
+              style={{ backgroundColor: P.plum }}
             >
-              <p className="font-display text-[24px] font-semibold text-ink">
-                {plansSection.basic.name}
+              <span
+                className="mt-3 inline-block whitespace-nowrap rounded-full px-3 py-1.5 font-display text-[10px] font-bold text-white"
+                style={{ backgroundColor: P.raspberry }}
+              >
+                {plansSection.plan.badge}
+              </span>
+              <p
+                className="rounded-full px-6 py-2 font-display text-[22px] font-semibold text-white sm:text-[24px]"
+                style={{ backgroundColor: P.peacock }}
+              >
+                {plansSection.plan.name}
               </p>
               <LazyImg
-                src={plansSection.basic.image.src}
-                alt={plansSection.basic.image.alt}
-                width={plansSection.basic.image.width}
-                height={plansSection.basic.image.height}
+                src={plansSection.plan.image.src}
+                alt={plansSection.plan.image.alt}
+                width={plansSection.plan.image.width}
+                height={plansSection.plan.image.height}
                 className="w-full rounded-xl"
               />
-              <p className="font-display text-[20px] font-semibold text-ink">
-                {plansSection.basic.receiveLabel}
+              <Badge>{plansSection.plan.pill}</Badge>
+              <p className={`font-display ${SUB} text-white`}>
+                {plansSection.plan.receiveLabel}
               </p>
               <ul className="w-full max-w-[320px] text-left">
-                {plansSection.basic.features.map((f) => (
-                  <FeatureItem key={f} text={f} />
+                {plansSection.plan.features.map((f) => (
+                  <FeatureItem key={f} text={f} light greenCheck />
                 ))}
               </ul>
               <p className="font-display text-[18px] text-alert line-through">
-                de {plansSection.basic.oldPrice} por:
+                de {plansSection.plan.oldPrice} por:
               </p>
-              <p className="font-display text-[60px] font-semibold leading-none text-ink">
-                {plansSection.basic.price}
+              <p className="font-display text-[60px] font-semibold leading-none text-white">
+                {plansSection.plan.price}
               </p>
-              <p className={`font-display ${SUB} text-ink`}>
-                {plansSection.basic.installments}
+              <p className={`font-display ${SUB} text-white`}>
+                {plansSection.plan.installments}
               </p>
-              <p className={`font-display ${SUB} text-ink`}>
-                {plansSection.basic.savings}
+              <p className={`flex items-center gap-2 font-display ${SUB} text-white`}>
+                <span className="size-2 shrink-0 rounded-full" style={{ backgroundColor: "#22c55e" }} aria-hidden />
+                {plansSection.plan.savings}
               </p>
               <CtaButton
-                href={checkout.basic}
-                label={plansSection.basic.ctaLabel}
-                id="plano_basico"
-                planName="Basico"
+                href={checkout.plan}
+                label={plansSection.plan.ctaLabel}
+                id="plano"
+                planName="Unico"
               />
-              {plansSection.upsellNote.alert ? (
-                <p className="max-w-[280px] font-display text-[16px] font-semibold leading-snug text-alert">
-                  {plansSection.upsellNote.alert}
-                </p>
-              ) : null}
-            </div>
-
-            {/* Plano Completo */}
-            <div id="plano-completo" className="flex w-full max-w-[480px] scroll-mt-4 flex-col items-center lg:max-w-none">
-              {plansSection.complete.soldLabel ? (
-                <Badge className="relative z-10 -mb-3">{plansSection.complete.soldLabel}</Badge>
-              ) : null}
-              <div
-                className="flex w-full flex-col items-center gap-4 rounded-2xl px-6 pb-10 pt-6"
-                style={{ backgroundColor: P.plum }}
-              >
-                <span
-                  className="mt-3 inline-block whitespace-nowrap rounded-full px-3 py-1.5 font-display text-[10px] font-bold text-white"
-                  style={{ backgroundColor: P.raspberry }}
-                >
-                  {plansSection.complete.badge}
-                </span>
-                <p
-                  className="rounded-full px-6 py-2 font-display text-[22px] font-semibold text-white sm:text-[24px]"
-                  style={{ backgroundColor: P.peacock }}
-                >
-                  {plansSection.complete.name}
-                </p>
-                {plansSection.complete.allBonusesLabel ? (
-                  <p className={`flex items-center gap-2 font-display ${SUB} text-white`}>
-                    <Check /> {plansSection.complete.allBonusesLabel}
-                  </p>
-                ) : null}
-                <LazyImg
-                  src={plansSection.complete.image.src}
-                  alt={plansSection.complete.image.alt}
-                  width={plansSection.complete.image.width}
-                  height={plansSection.complete.image.height}
-                  className="w-full rounded-xl"
-                />
-                <Badge>{plansSection.complete.pill}</Badge>
-                <ul className="w-full max-w-[320px] text-left">
-                  {plansSection.complete.features.map((f) => (
-                    <FeatureItem key={f} text={f} light />
-                  ))}
-                </ul>
-                <p className="font-display text-[18px] text-alert line-through">
-                  de {plansSection.complete.oldPrice} por:
-                </p>
-                <p className="font-display text-[60px] font-semibold leading-none text-white">
-                  {plansSection.complete.price}
-                </p>
-                <p className={`font-display ${SUB} text-white`}>
-                  {plansSection.complete.installments}
-                </p>
-                <p className={`font-display ${SUB} text-white`}>
-                  {plansSection.complete.savings}
-                </p>
-                <CtaButton
-                  href={checkout.complete}
-                  label={plansSection.complete.ctaLabel}
-                  id="plano_completo"
-                  planName="Completo"
-                />
-                <p className={`font-display ${SUB} text-white/80`}>
-                  {guarantee.intro}
-                </p>
-                <SecurePurchaseBadge />
-              </div>
+              <p className={`font-display ${SUB} text-white/80`}>
+                {guarantee.intro}
+              </p>
+              <SecurePurchaseBadge />
             </div>
           </div>
         </div>

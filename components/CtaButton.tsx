@@ -3,7 +3,7 @@ type Props = {
   label: string;
   /** Identificador da posição do CTA na página, enviado ao dataLayer e ao Pixel. */
   id: string;
-  /** Nome do plano ("Basico" | "Completo"). */
+  /** Nome do plano ("Unico"). */
   planName?: string;
   className?: string;
 };

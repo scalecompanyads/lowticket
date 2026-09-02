@@ -16,7 +16,7 @@ export function StickyCta({
 
   useEffect(() => {
     const hero = document.querySelector("main > section");
-    const plan = document.getElementById("plano-basico");
+    const plan = document.getElementById("plano");
     if (!hero || !plan) return;
 
     let heroVisible = true;
@@ -54,7 +54,7 @@ export function StickyCta({
       aria-hidden={!show}
     >
       <a
-        href="#plano-basico"
+        href="#plano"
         tabIndex={show ? 0 : -1}
         data-cta-id="sticky_mobile"
         data-cta-label={label}

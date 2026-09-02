@@ -9,9 +9,8 @@ export const footer = {
 };
 
 export const checkout = {
-  hero: "#plano-basico",
-  basic: "#checkout-placeholder-basico",
-  complete: "#checkout-placeholder-completo",
+  hero: "#plano",
+  plan: "#checkout-placeholder",
 };
 
 export const testimonials = {
@@ -76,11 +75,11 @@ export const hero = {
   titleHighlight: "Organize o Marketing Jurídico do Seu Escritório com Modelos Prontos",
   title: "guias práticos que mostram exatamente como estruturar Instagram, Google e atendimento ao cliente.",
   image: {
-    alt: "Advogado organizando perfil do Instagram, Google Meu Negócio e atendimento ao cliente com modelos prontos",
-    width: 960,
-    height: 960,
+    alt: "Kit do Protocolo Cliente Todo Dia com os guias Google Perfil da Empresa, Comercial Jurídico, Instagram Jurídico e Biblioteca de Conteúdos Jurídicos",
+    width: 1024,
+    height: 1024,
   },
-  poster: { src: "" },
+  poster: { src: "/hero.webp" },
   subtitle:
     "Use scripts e estruturas prontas para se posicionar no digital e atrair clientes sem depender só de indicação.",
   ctaLabel: "QUERO ORGANIZAR MEU MARKETING JURÍDICO",
@@ -139,16 +138,32 @@ export const offerSection = {
   },
   howItWorks: [
     {
-      title: "PARTE 1 — Organize seu atendimento",
+      title: "Guia 1 — Organize seu atendimento",
       desc: "Mapeie os pontos em que você hoje improvisa e veja onde um modelo pronto resolve mais rápido.",
     },
     {
-      title: "PARTE 2 — Scripts de WhatsApp prontos",
+      title: "Guia 2 — Scripts de WhatsApp prontos",
       desc: "Mensagens de primeiro contato, follow-up e fechamento para você copiar e adaptar.",
     },
     {
-      title: "PARTE 3 — Modelos de Condução de Conversa",
+      title: "Guia 3 — Modelos de Condução de Conversa",
       desc: "Como conduzir do primeiro contato até o fechamento sem parecer robótico.",
+    },
+    {
+      title: "Guia 4 — Instagram Jurídico Organizado",
+      desc: "Bio pronta, destaques organizados e roteiro de nome e categoria de perfil.",
+    },
+    {
+      title: "Guia 5 — Biblioteca de Conteúdo Jurídico",
+      desc: "Ideias prontas de postagem institucional, de autoridade e de conversão.",
+    },
+    {
+      title: "Guia 6 — Google Meu Negócio Jurídico",
+      desc: "Passo a passo de configuração do perfil, respostas a avaliações e SEO local básico.",
+    },
+    {
+      title: "Guia 7 — Scripts Extras de Atendimento",
+      desc: "Respostas para objeções, reativação de contatos antigos e pedido de indicação.",
     },
     {
       title: "Em cada modelo você verá:",
@@ -157,118 +172,36 @@ export const offerSection = {
   ],
 };
 
-export const bonusSection = {
-  titleLines: ["E NÃO PARA POR AÍ...", "TEM MAIS!", "Você também vai receber…"],
-  pill: "🎁 4 BÔNUS EXCLUSIVOS",
-  exclusiveNote: "Bônus incluso somente no Plano Completo",
-  items: [
-    {
-      label: "BÔNUS #1",
-      title: "Modelos de Instagram Jurídico",
-      features: [
-        "Bio pronta para copiar e adaptar",
-        "3 modelos de destaques organizados",
-        "Roteiro de nome e categoria de perfil",
-        "Checklist de primeira impressão do perfil",
-      ],
-      price: "R$27",
-    },
-    {
-      label: "BÔNUS #2",
-      title: "Biblioteca de Conteúdo Jurídico",
-      features: [
-        "15 ideias de conteúdo institucional",
-        "10 ideias de conteúdo de autoridade",
-        "10 ideias de conteúdo de conversão",
-        "Calendário simples de postagens",
-      ],
-      price: "R$27",
-    },
-    {
-      label: "BÔNUS #3",
-      title: "Google Meu Negócio Jurídico",
-      features: [
-        "Passo a passo de configuração do perfil",
-        "Modelo de resposta para avaliações",
-        "Checklist de SEO local básico",
-        "Guia de fotos e categorias",
-      ],
-      price: "R$27",
-    },
-    {
-      label: "BÔNUS #4",
-      title: "Scripts Extras de Atendimento",
-      features: [
-        "Respostas para as objeções mais comuns",
-        "Script de reativação de contatos antigos",
-        "Modelo de mensagem de pós-atendimento",
-        "Frases para pedir indicação sem parecer forçado",
-      ],
-      price: "R$27",
-    },
-  ] as {
-    label: string;
-    title: string;
-    features: string[];
-    price: string;
-    src?: string;
-  }[],
-};
-
 export const plansSection = {
   pill: "🔥 ÚLTIMA CHANCE — OFERTA TERMINA HOJE",
-  title: "ESCOLHA A MELHOR OPÇÃO PARA VOCÊ",
-  basic: {
-    name: "PLANO BÁSICO",
+  title: "GARANTA SEU ACESSO AGORA",
+  plan: {
+    badge: "🔥 ÚLTIMA CHANCE — OFERTA TERMINA HOJE",
+    name: "PROTOCOLO CLIENTE TODO DIA",
     image: {
       src: "",
-      alt: "Protocolo Comercial Jurídico aberto com scripts de atendimento e mensagens prontas para WhatsApp",
+      alt: "Kit completo do Protocolo Cliente Todo Dia com Instagram, conteúdo, Google e scripts prontos",
       width: 1024,
       height: 1024,
     },
+    pill: "⚡ACESSO IMEDIATO",
+    soldLabel: "⚡MAIS VENDIDO",
     receiveLabel: "Você recebe:",
     features: [
       "Protocolo Comercial Jurídico completo",
       "Scripts prontos de WhatsApp",
       "Modelos de condução de conversa",
-      "Guias visuais de aplicação",
-    ],
-    oldPrice: "R$37,90",
-    price: "R$27,90",
-    installments: "ou 4x de R$7,48 no cartão.",
-    savings: "Você economiza R$10,00",
-    ctaLabel: "QUERO O PLANO BÁSICO",
-  },
-  complete: {
-    badge: "🔥 ÚLTIMA CHANCE — OFERTA TERMINA HOJE",
-    name: "PROTOCOLO ADVOGADO POSICIONADO",
-    allBonusesLabel: "",
-    image: {
-      src: "",
-      alt: "Kit completo do Protocolo Advogado Posicionado com Instagram, conteúdo, Google e scripts prontos",
-      width: 1024,
-      height: 1024,
-    },
-    pill: "⚡4x MAIS CONTEÚDOS",
-    soldLabel: "⚡MAIS VENDIDO",
-    features: [
-      "Protocolo Comercial Jurídico",
-      "🎁BÔNUS 1 - Modelos de Instagram Jurídico",
-      "🎁BÔNUS 2 - Biblioteca de Conteúdo Jurídico",
-      "🎁BÔNUS 3 - Google Meu Negócio Jurídico",
-      "🎁BÔNUS 4 - Scripts Extras de Atendimento",
+      "Modelos de Instagram Jurídico",
+      "Biblioteca de Conteúdo Jurídico",
+      "Google Meu Negócio Jurídico",
+      "Scripts Extras de Atendimento",
       "Acesso imediato ao material",
     ],
     oldPrice: "R$67,90",
     price: "R$37,90",
     installments: "ou 6x de R$6,48 no cartão.",
     savings: "Você economiza R$30,00",
-    ctaLabel: "QUERO O PROTOCOLO COMPLETO",
-  },
-  upsellNote: {
-    alert: "92% dos advogados aproveitam o plano abaixo 👇",
-    body: "",
-    highlight: "",
+    ctaLabel: "QUERO GARANTIR MEU ACESSO",
   },
   securePurchaseBadge: {
     src: "/entregaveis-v2/compra-segura-hotmart-640.webp",
