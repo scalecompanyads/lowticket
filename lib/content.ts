@@ -41,35 +41,27 @@ export const testimonials = {
 
 export const materials = {
   title: "VEJA OS MODELOS QUE VOCÊ VAI RECEBER JÁ",
-  imageSize: { width: 768, height: 1024 },
+  imageSize: { width: 972, height: 1375 },
   items: [
     {
-      src: "/entregaveis-v2/modelo-1.webp",
-      alt: "Sumário da Biblioteca de Conteúdos Jurídicos com ganchos institucionais, de autoridade e de conversão",
+      src: "/entregaveis-v3/previa-1.webp",
+      alt: "Prévia do Protocolo Advogado Posicionado — página 1",
     },
     {
-      src: "/entregaveis-v2/modelo-2.webp",
-      alt: "Modelo de gancho de conversão para reconhecer o problema e indicar o próximo passo",
+      src: "/entregaveis-v3/previa-2.webp",
+      alt: "Prévia do Protocolo Advogado Posicionado — página 2",
     },
     {
-      src: "/entregaveis-v2/modelo-3.webp",
-      alt: "Sete CTAs informativas prontas para adaptar em vídeos jurídicos",
+      src: "/entregaveis-v3/previa-3.webp",
+      alt: "Prévia do Protocolo Advogado Posicionado — página 3",
     },
     {
-      src: "/entregaveis-v2/modelo-4.webp",
-      alt: "Ganchos institucionais para apresentar quem você é e sua forma de atendimento",
+      src: "/entregaveis-v3/previa-4.webp",
+      alt: "Prévia do Protocolo Advogado Posicionado — página 4",
     },
     {
-      src: "/entregaveis-v2/modelo-5.webp",
-      alt: "Guia de destaques do Instagram Jurídico com seis capas e padrão visual",
-    },
-    {
-      src: "/entregaveis-v2/modelo-6.webp",
-      alt: "Checklist de aplicação antes de gravar conteúdo jurídico",
-    },
-    {
-      src: "/entregaveis-v2/modelo-7.webp",
-      alt: "Modelo de bio para Instagram Jurídico com quatro perguntas essenciais",
+      src: "/entregaveis-v3/previa-5.webp",
+      alt: "Prévia do Protocolo Advogado Posicionado — página 5",
     },
   ] as { src?: string; alt: string }[],
 };
@@ -88,11 +80,11 @@ export const hero = {
   titleHighlight: "Organize o Marketing Jurídico do Seu Escritório com Modelos Prontos",
   title: "guias práticos que mostram exatamente como estruturar Instagram, Google e atendimento ao cliente.",
   image: {
-    alt: "Kit do Protocolo Cliente Todo Dia com os guias Google Perfil da Empresa, Comercial Jurídico, Instagram Jurídico e Biblioteca de Conteúdos Jurídicos",
-    width: 1024,
-    height: 1024,
+    alt: "Protocolo Advogado Posicionado com guias para Google, Instagram e atendimento jurídico",
+    width: 1254,
+    height: 1254,
   },
-  poster: { src: "/hero.webp?v=2" },
+  poster: { src: "/entregaveis-v3/feed-hero-scale.png" },
   subtitle:
     "Use scripts e estruturas prontas para se posicionar no digital e atrair clientes sem depender só de indicação.",
   ctaLabel: "QUERO ORGANIZAR MEU MARKETING JURÍDICO",
@@ -191,10 +183,10 @@ export const plansSection = {
   plan: {
     name: "PROTOCOLO CLIENTE TODO DIA",
     image: {
-      src: "/entregaveis-v2/plano-protocolo.webp",
-      alt: "Kit completo do Protocolo Cliente Todo Dia com livros, modelos impressos, laptop e materiais de marketing jurídico",
-      width: 1024,
-      height: 1024,
+      src: "/entregaveis-v3/completo-scale.png",
+      alt: "Kit completo do Protocolo com livros, laptop, celular e guias para Google, Instagram e atendimento jurídico",
+      width: 1254,
+      height: 1254,
     },
     pill: "⚡ACESSO IMEDIATO",
     receiveLabel: "Você recebe:",
