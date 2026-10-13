@@ -10,7 +10,7 @@ export const footer = {
 
 export const checkout = {
   hero: "#plano",
-  plan: "#checkout-placeholder",
+  plan: "https://pay.hotmart.com/D107304444U?off=dgto0n3l",
 };
 
 export const testimonials = {
