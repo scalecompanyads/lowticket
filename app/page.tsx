@@ -5,7 +5,6 @@ import { Marquee } from "@/components/Marquee";
 import { AnchorScroll } from "@/components/AnchorScroll";
 import {
   theme,
-  offerBar,
   hero,
   materials,
   whySection,
@@ -169,12 +168,6 @@ function FeatureItem({
 export const revalidate = 3600;
 
 export default function Home() {
-  const today = new Date().toLocaleDateString("pt-BR", {
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
-  });
-
   return (
     <>
     <main
@@ -184,13 +177,6 @@ export default function Home() {
         fontFamily: "var(--font-manrope), Manrope, sans-serif",
       } as React.CSSProperties}
     >
-      {/* Offer bar */}
-      <div className="flex items-center justify-center px-4 py-[10px]" style={{ backgroundColor: P.raspberry }}>
-        <p className="text-center font-display text-[12px] font-semibold leading-snug text-white">
-          {offerBar.text} {today}
-        </p>
-      </div>
-
       <StickyCta label={hero.ctaLabel} />
       <AnchorScroll />
 

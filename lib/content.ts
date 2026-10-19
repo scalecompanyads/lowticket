@@ -70,10 +70,6 @@ export const theme = {
   brandColor: "#3a43e3",
 };
 
-export const offerBar = {
-  text: "⚡ OFERTA ESPECIAL DISPONÍVEL APENAS HOJE",
-};
-
 export const hero = {
   logo: { src: "", alt: "Protocolo Cliente Todo Dia", width: 200, height: 60 },
   secureSeal: "",
@@ -178,7 +174,7 @@ export const offerSection = {
 };
 
 export const plansSection = {
-  pill: "🔥 ÚLTIMA CHANCE — OFERTA TERMINA HOJE",
+  pill: "⚡ACESSO IMEDIATO",
   title: "GARANTA SEU ACESSO AGORA",
   plan: {
     name: "PROTOCOLO CLIENTE TODO DIA",
