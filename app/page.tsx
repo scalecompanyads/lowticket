@@ -48,8 +48,12 @@ function LazyImg({
   height,
   className = "",
   priority = false,
+  srcSet,
+  sizes,
 }: {
   src?: string;
+  srcSet?: string;
+  sizes?: string;
   alt: string;
   width: number;
   height: number;
@@ -71,11 +75,13 @@ function LazyImg({
     // eslint-disable-next-line @next/next/no-img-element
     <img
       src={src}
+      srcSet={srcSet}
+      sizes={sizes}
       alt={alt}
       width={width}
       height={height}
       loading={priority ? "eager" : "lazy"}
-      decoding={priority ? "sync" : "async"}
+      decoding="async"
       fetchPriority={priority ? "high" : "low"}
       className={className}
     />
@@ -202,6 +208,8 @@ export default function Home() {
           <div className="relative mt-2 w-full max-w-[383px]">
             <LazyImg
               src={hero.poster.src}
+              srcSet={hero.poster.srcSet}
+              sizes={hero.poster.sizes}
               alt={hero.image.alt}
               width={hero.image.width}
               height={hero.image.height}
@@ -381,6 +389,8 @@ export default function Home() {
               </p>
               <LazyImg
                 src={plansSection.plan.image.src}
+                srcSet={plansSection.plan.image.srcSet}
+                sizes={plansSection.plan.image.sizes}
                 alt={plansSection.plan.image.alt}
                 width={plansSection.plan.image.width}
                 height={plansSection.plan.image.height}

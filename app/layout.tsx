@@ -8,8 +8,7 @@ import "./page.css";
 
 const manrope = Manrope({
   variable: "--font-manrope",
-  subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600", "700", "800"],
+  subsets: ["latin"],
   display: "swap",
   preload: true,
   adjustFontFallback: true,
@@ -52,8 +51,10 @@ export default async function RootLayout({
             rel="preload"
             as="image"
             href={hero.poster.src}
+            imageSrcSet={hero.poster.srcSet}
+            imageSizes={hero.poster.sizes}
             fetchPriority="high"
-            type="image/png"
+            type="image/webp"
           />
         ) : null}
       </head>

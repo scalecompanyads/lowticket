@@ -44,23 +44,23 @@ export const materials = {
   imageSize: { width: 972, height: 1375 },
   items: [
     {
-      src: "/entregaveis-v3/previa-1.webp",
+      src: "/entregaveis-v3/previa-1-520.webp",
       alt: "Prévia do Protocolo Advogado Posicionado — página 1",
     },
     {
-      src: "/entregaveis-v3/previa-2.webp",
+      src: "/entregaveis-v3/previa-2-520.webp",
       alt: "Prévia do Protocolo Advogado Posicionado — página 2",
     },
     {
-      src: "/entregaveis-v3/previa-3.webp",
+      src: "/entregaveis-v3/previa-3-520.webp",
       alt: "Prévia do Protocolo Advogado Posicionado — página 3",
     },
     {
-      src: "/entregaveis-v3/previa-4.webp",
+      src: "/entregaveis-v3/previa-4-520.webp",
       alt: "Prévia do Protocolo Advogado Posicionado — página 4",
     },
     {
-      src: "/entregaveis-v3/previa-5.webp",
+      src: "/entregaveis-v3/previa-5-520.webp",
       alt: "Prévia do Protocolo Advogado Posicionado — página 5",
     },
   ] as { src?: string; alt: string }[],
@@ -80,7 +80,12 @@ export const hero = {
     width: 1254,
     height: 1254,
   },
-  poster: { src: "/entregaveis-v3/feed-hero-scale.png" },
+  poster: {
+    src: "/entregaveis-v3/hero-800.webp",
+    srcSet:
+      "/entregaveis-v3/hero-400.webp 400w, /entregaveis-v3/hero-640.webp 640w, /entregaveis-v3/hero-800.webp 800w",
+    sizes: "(max-width: 423px) calc(100vw - 40px), 383px",
+  },
   subtitle:
     "Use scripts e estruturas prontas para se posicionar no digital e atrair clientes sem depender só de indicação.",
   ctaLabel: "QUERO ORGANIZAR MEU MARKETING JURÍDICO",
@@ -179,7 +184,9 @@ export const plansSection = {
   plan: {
     name: "PROTOCOLO CLIENTE TODO DIA",
     image: {
-      src: "/entregaveis-v3/completo-scale.png",
+      src: "/entregaveis-v3/completo-880.webp",
+      srcSet: "/entregaveis-v3/completo-440.webp 440w, /entregaveis-v3/completo-880.webp 880w",
+      sizes: "(max-width: 480px) calc(100vw - 88px), 432px",
       alt: "Kit completo do Protocolo com livros, laptop, celular e guias para Google, Instagram e atendimento jurídico",
       width: 1254,
       height: 1254,
